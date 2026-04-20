@@ -1,6 +1,6 @@
 services:
   - type: web
     name: zebaq-landing
-    env: static
+    env: node
     buildCommand: npm install && npm run build
-    publishDir: dist
+    startCommand: npx serve -s dist
